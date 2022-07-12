@@ -637,6 +637,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .-mt-14 {
   margin-top: -3.5rem;
 }
@@ -651,6 +655,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .h-8 {
@@ -921,7 +929,7 @@ body {
   background-image: url('../images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-size: 800px;
-  background-position: 90% -25%;
+  background-position: 105% -15%;
 }
 
 #cta {
@@ -986,6 +994,48 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* Email Input */
+
+#form {
+  position: relative;
+}
+
+#form .inputBox {
+  position: relative;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 5px;
+}
+
+#form.invalid .inputBox:before {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  background-image: url(images/invalid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid .inputBox:before {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  background-image: url(images/valid.png);
+  background-size: cover;
+  z-index: 1000;
 }
 
 .hover\:bg-brightRedLight:hover {
